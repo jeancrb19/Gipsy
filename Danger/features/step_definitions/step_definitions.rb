@@ -5,6 +5,7 @@ end
 
 Dado(/^pesquiso por "([^"]*)" na "([^"]*)"$/) do |arg1, arg2|
   find(arg2).set(arg1)
+  find(arg2).native.send_keys(:enter)
 end
 
 Entao(/^espero que sejam listados iphone x$/) do

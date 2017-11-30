@@ -1,5 +1,5 @@
 #language: pt
-@joaquino
+
 Funcionalidade: Testar o Joaquino
   Cenario: Joaquino é top
     Dado que estou na url "https://www.mercadolivre.com.br/"
