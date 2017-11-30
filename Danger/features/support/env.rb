@@ -2,7 +2,7 @@ require 'rspec'
 require 'capybara/cucumber'
 require 'pry'
 require 'yaml'
-
+require 'capybara/poltergeist'
 
 if ENV['chrome']
   Capybara.default_driver = :chrome
@@ -12,7 +12,7 @@ if ENV['chrome']
 elsif ENV['chrome_headless']
   Capybara.default_driver = :chrome_headless
   Capybara.register_driver :chrome_headless do |app|
-    Capybara::Selenium::Driver.new(app, browser: :chrome, switches: ['--headless'])
+    Capybara::Selenium::Driver.new(app, browser: :chrome, switches: ['--headless', '--no-sandbox', '--disable-gpu', '--window-size=1920,1080'])
 end
 elsif ENV['firefox']
   Capybara.default_driver = :firefox
