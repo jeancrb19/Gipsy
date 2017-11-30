@@ -1,1 +1,4 @@
+# default: -p html_report -p chromedriver -p qa
+ci: -p json_report -p poltergeist -p qa
 html_report: --format pretty --format html --out=reports/features_report.html
+# json_report: --format progress --format json --out=reports/features_report.json

@@ -10,8 +10,8 @@ end
 
 Entao(/^espero que sejam listados iphone x$/) do
   if has_text?('Iphone X', wait: 50)
-    puts "Sucesso tem iPhone na tela"
+    puts 'Sucesso tem iPhone na tela'
   else
-    raise "Não foram apresentados iphones X"
+    raise 'Não foram apresentados iphones X'
   end
 end
