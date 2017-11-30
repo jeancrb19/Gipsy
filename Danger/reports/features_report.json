@@ -1,0 +1,92 @@
+[
+  {
+    "uri": "features/example.feature",
+    "id": "testar-o-joaquino",
+    "keyword": "Funcionalidade",
+    "name": "Testar o Joaquino",
+    "description": "",
+    "line": 3,
+    "elements": [
+      {
+        "id": "testar-o-joaquino;joaquino-é-top",
+        "keyword": "Cenario",
+        "name": "Joaquino é top",
+        "description": "",
+        "line": 4,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-2.16.1/lib/capybara/cucumber.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20432
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.16.1/lib/capybara/cucumber.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13822
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou na url \"https://www.mercadolivre.com.br/\"",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/step_definitions.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5336522112
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "pesquiso por \"iphone x\" na \".nav-search-input\"",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/step_definitions.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1736427284
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "espero que sejam listados iphone x",
+            "line": 7,
+            "output": [
+              "Sucesso tem iPhone na tela"
+            ],
+            "match": {
+              "location": "features/step_definitions/step_definitions.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1538905192
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-2.16.1/lib/capybara/cucumber.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113236897
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
